@@ -1,0 +1,12 @@
+html {
+    font-family: 'League Gothic', sans-serif;
+    /* font size trick is 10px */
+    font-size: 62.5%; 
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

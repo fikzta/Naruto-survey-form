@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="narutosurvey.css">
+    <title>Naruto Survey</title>
+</head>
+
+<body>
+    <header class="intro">
+        <h1 id="title">What is your S-Rank Jutsu?</h1>
+        <figure>
+            <blockquote>
+                <p id="description">
+                    Jutsu (術, literally meaning: skills/techniques) are the mystical arts a ninja will utilise in
+                    battle. S-rank techniques are almost always unique to a single user, and as such are trademark
+                    abilities of that user.
+                </p>
+            </blockquote>
+            <figcaption>
+                First sentence in <cite><a href="https://naruto.fandom.com/wiki/Jutsu">Naruto Fandom Wiki
+                        Jutsu.</a></cite>
+                Third sentence in <cite><a href="https://naruto.fandom.com/wiki/S-rank">Naruto Fandom Wiki
+                        S-Rank.</a></cite> Manga series by Masashi Kishimito
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <form id="survey-form" action="#">
+            <section class="ninja-info">
+                <label id="name-label" for="name">Enter Shinobi Name:</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="10" size="16" placeholder="Enter Name">
+            </section>
+            <section class="ninja-info">
+                <label  id="email-label" for="email">Enter Shinobi Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Email">
+            </section>
+            <section class="ninja-info">
+                <label id="number-label" for="number">Shinobi Age:</label>
+                <input type="number" id="number" min="10" max="2000000" placeholder="Enter Age" size="16">
+            </section>
+            <section class="ninja-info">
+                <label for="nature">What is your Elemental Nature?</label>
+                <select id="dropdown" name="nature" id="nature">
+                    <option value="">--Choose your Elemental Nature--</option>
+                    <option value="fire">Fire</option>
+                    <option value="wind">Wind</option>
+                    <option value="lightning">Lightning</option>
+                    <option value="earth">Earth</option>
+                    <option value="water">Water</option>
+                </select>
+            </section>
+            <section class="ninja-info">
+                    <p>What is your Shinobi Rank?</p>
+                    <div>
+                        <input type="radio" id="academy" name="rank" value="academy" checked required>
+                        <label for="academy">Academy Student</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="genin" name="rank" value="genin" required>
+                        <label for="genin">Genin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chunin" name="rank" value="chunin" required>
+                        <label for="chunin">Chunin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="specialj" name="rank" value="specialj" required>
+                        <label for="specialj">Tokubetsu Jonin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="jonin" name="rank" value="jonin" required>
+                        <label for="jonin">Jonin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="kage" name="rank" value="kage" required>
+                        <label for="kage">Kage</label>
+                    </div>     
+            </section>
+            <section class="ninja-info">
+                <p>What kind of S-Rank Jutsu would you like to learn?</p>
+                <div>
+                    <input type="checkbox" id="ninjutsu" name="jutsu" value="ninjutsu" checked>
+                    <label for="ninjutsu">Ninjutsu</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="genjutsu" name="jutsu" value="genjutsu">
+                    <label for="genjutsu">Genjutsu</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="taijutsu" name="jutsu" value="taijutsu">
+                    <label for="taijutsu">Taijutsu</label>
+                </div>
+            </section>
+            <section class="ninja-info">
+                <label for="goals">What are your shinobi goals?
+                </label>
+
+                <textarea name="goals" id="goals" cols="30" rows="10">My shinobi goals are...</textarea>
+            </section>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <h2 class="reference">Reference:</h2>
+        <figure>
+            <blockquote>
+                <p>
+                    For more information about the Naruto series, jutsu and S-rank.
+                </p>
+            </blockquote>
+            <figcaption>
+               Refer to this <cite><a href="https://naruto.fandom.com/">wikia.</a></cite>  Manga series by Masashi Kishimito
+            </figcaption>
+        </figure>
+    </footer>
+
+</body>
+
+</html>
